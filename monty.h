@@ -54,4 +54,5 @@ void errormsg(stack_t **stack01, unsigned int lineOfArg);
 int _isDigit(char *arg);
 void stackPall(stack_t **printedStack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
+void _swapper(stack_t **sstack, unsigned int lNo);
 #endif /* MONTY_H */
