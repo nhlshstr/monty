@@ -4,6 +4,11 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -33,5 +38,11 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
+void (*opcall(stack_t **stack, int line, char *keyword))(stack_t **, unsigned int);
+void freeStack(stack_t **stack);
+void stackPush(stack_t **new, unsigned int lineNo);
+void LL_adder(stack_t **stacker, int ar);
+void errormsg(stack_t **stack01, unsigned int lineOfArg);
+int _isDigit(char *arg);
+void stackPall(stack_t **printedStack, unsigned int line_number);
 #endif /* MONTY_H */
