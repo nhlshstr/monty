@@ -50,6 +50,7 @@ void (*op(stack_t **stack, int line, char *key))(stack_t **, unsigned int)
 	instruction_t opMatch[] = {
 		{"push", stackPush},
 		{"pall", stackPall},
+		{"pint", _pint},
 		{NULL, NULL}
 	};
 

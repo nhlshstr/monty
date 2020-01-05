@@ -46,6 +46,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 void (*op(stack_t **stack, int line, char *key))(stack_t **, unsigned int);
+void _pint(stack_t **stacks, unsigned int lineNo);
 void freeStack(stack_t **stack);
 void stackPush(stack_t **new, unsigned int lineNo);
 void LL_adder(stack_t **stacker, int ar);
