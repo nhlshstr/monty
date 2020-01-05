@@ -51,6 +51,7 @@ void (*op(stack_t **stack, int line, char *key))(stack_t **, unsigned int)
 		{"push", stackPush},
 		{"pall", stackPall},
 		{"pint", _pint},
+		{"pop", pop},
 		{NULL, NULL}
 	};
 
