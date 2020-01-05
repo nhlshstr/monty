@@ -1,7 +1,7 @@
 #include "monty.h"
 /**
  * _pint - prints element at top of stack
- * @stack: stack passed to the function
+ * @stacks: stack passed to the function
  * @lineNo: Line Number
  */
 void _pint(stack_t **stacks, unsigned int lineNo)
