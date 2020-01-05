@@ -53,4 +53,5 @@ void LL_adder(stack_t **stacker, int ar);
 void errormsg(stack_t **stack01, unsigned int lineOfArg);
 int _isDigit(char *arg);
 void stackPall(stack_t **printedStack, unsigned int line_number);
+void pop(stack_t **stack, unsigned int line_number);
 #endif /* MONTY_H */
