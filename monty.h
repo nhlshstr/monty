@@ -56,4 +56,5 @@ void stackPall(stack_t **printedStack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
 void _swapper(stack_t **sstack, unsigned int lNo);
 void _adder(stack_t **stack0, unsigned int lnum);
+void _nop(stack_t **stack, unsigned int lineNum);
 #endif /* MONTY_H */
