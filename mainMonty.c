@@ -30,6 +30,7 @@ int main(int ac, char **av)
 	{
 		i = strtok(buffer, " \t");
 		op(&myStack, l, i)(&myStack, l);
+		l += 1;
 	}
 	freeStack(&myStack);
 	fclose(ob1.fd);
@@ -55,6 +56,7 @@ void (*op(stack_t **stack, int line, char *key))(stack_t **, unsigned int)
 		{"swap", _swapper},
 		{"add", _adder},
 		{"nop", _nop },
+		{"sub", _subber},
 		{NULL, NULL}
 	};
 
