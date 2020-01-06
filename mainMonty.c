@@ -27,8 +27,10 @@ int main(int ac, char **av)
 		exit(EXIT_FAILURE);
 	}
 	while (fgets(buffer, 2000, ob1.fd))
-	{
+	{	
 		i = strtok(buffer, " \t");
+		if (i[0] == '#')
+			_nop(&myStack, l);
 		op(&myStack, l, i)(&myStack, l);
 		l += 1;
 	}
@@ -57,6 +59,9 @@ void (*op(stack_t **stack, int line, char *key))(stack_t **, unsigned int)
 		{"add", _adder},
 		{"nop", _nop },
 		{"sub", _subber},
+		{"mul", _mul},
+		{"div", _div},
+		{"mod", _mod},
 		{NULL, NULL}
 	};
 
