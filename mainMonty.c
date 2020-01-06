@@ -53,6 +53,7 @@ void (*op(stack_t **stack, int line, char *key))(stack_t **, unsigned int)
 		{"pint", _pint},
 		{"pop", pop},
 		{"swap", _swapper},
+		{"add", _adder},
 		{NULL, NULL}
 	};
 
